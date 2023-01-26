@@ -1,23 +1,80 @@
 <?php
 
-function routeToController($uri, $routes)
+namespace Core;
+
+class Router
 {
-    if (array_key_exists($uri, $routes)) {
-        require base_path($routes[$uri]);
-    } else {
-        abort();
+    protected $routes = [];
+
+    public function get($uri, $controller)
+    {
+        $this->routes[] = [
+            'uri' => $uri,
+            'controller' => $controller,
+            'method' => 'GET'
+        ];
+    }
+
+    public function post($uri, $controller)
+    {
+        $this->routes[] = [
+            'uri' => $uri,
+            'controller' => $controller,
+            'method' => 'POST'
+        ];
+    }
+
+    public function delete($uri, $controller)
+    {
+        $this->routes[] = [
+            'uri' => $uri,
+            'controller' => $controller,
+            'method' => 'DELETE'
+        ];
+    }
+
+    public function patch($uri, $controller)
+    {
+        $this->routes[] = [
+            'uri' => $uri,
+            'controller' => $controller,
+            'method' => 'PATCH'
+        ];
+    }
+
+    public function put($uri, $controller)
+    {
+        $this->routes[] = [
+            'uri' => $uri,
+            'controller' => $controller,
+            'method' => 'PUT'
+        ];
+    }
+
+    public function route($uri)
+    {
+        foreach ($this->routes as $route) {
+            if ($route['uri'] === $uri) {
+                return require base_path($route['controller']);
+            }
+        }
     }
 }
 
-function abort($code = 404)
-{
-    http_response_code($code);
+// function routeToController($uri, $routes)
+// {
+//     if (array_key_exists($uri, $routes)) {
+//         require base_path($routes[$uri]);
+//     } else {
+//         abort();
+//     }
+// }
 
-    require base_path("views/{$code}.php");
+// function abort($code = 404)
+// {
+//     http_response_code($code);
 
-    die();
-}
+//     require base_path("views/{$code}.php");
 
-$routes = require base_path('routes.php');
-$uri = parse_url($_SERVER['REQUEST_URI'])['path'];
-routeToController($uri, $routes);
+//     die();
+// }
