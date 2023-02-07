@@ -1,6 +1,6 @@
-<h1 align="center">🚀 Laracasts' PHP Courses</h1>
+<h1 align="center">🤖 Laracasts' PHP Courses</h1>
 
-<h4 align="center"> 
+<h4 align="center">
 	 Status: Pending
 </h4>
 
@@ -12,28 +12,15 @@
 
 ## About
 
-🚀 Rocketseat's Discover Exercises is a repository created to store exercises developed throughout Rocketseat's Discover course. It contains exercises all the way from basic Front-End tools, such as HTML and CSS to more advanced Full Stack tools, such as React.js, TypeScript, Node.js and more!
+🚀 Laracasts' PHP Courses is a repository created to store the code developed throughout Laracasts' PHP courses. It contains code all the way from basic concepts, such as variables and objects to more ones, such as service containers, classes and more!
 
 ## Tech Stack
 
 The following tools were used in the construction of the repository:
 
-#### **Front-End**
-
--   **[HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)**
--   **[CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)**
--   **[React.js](https://reactjs.org/)**
-
-#### **Back-End**
-
--   **[Node.js](https://nodejs.org/en/)**
--   **[SQL](https://www.w3schools.com/sql/)**
--   **[Insomnia](https://insomnia.rest/download)**
-
 #### **Programming Languages**
 
-- **[JavaScript](https://www.javascript.com/)**
-- **[TypeScript](https://www.typescriptlang.org/)**
+- **[PHP](https://www.php.net/)**
 
 ## Contact Me!
 
