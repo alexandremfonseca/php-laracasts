@@ -12,7 +12,7 @@
 
 ## About
 
-🚀 Laracasts' PHP Courses is a repository created to store the code developed throughout Laracasts' PHP courses. It contains code all the way from basic concepts, such as variables and objects to more ones, such as service containers, classes and more!
+🤖 Laracasts' PHP Courses is a repository created to store the code developed throughout Laracasts' PHP courses. It contains code all the way from basic concepts, such as variables and objects to more ones, such as service containers, classes and more!
 
 ## Tech Stack
 
